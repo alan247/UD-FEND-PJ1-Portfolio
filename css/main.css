@@ -1,7 +1,21 @@
 main {
 	height: 70vh;
 	width: 100vw;
-	background-color: orange;
+	background: url(../img_src/main-background.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+main:before {
+	content: '';
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .4;
+
 }
 
 .welcome-text {
