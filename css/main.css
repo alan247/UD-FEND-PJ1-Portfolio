@@ -33,21 +33,43 @@ main:before {
 }
 
 .projects li:nth-child(1) {
-	background-color: red;
+	background-color: #14966C;
 }
 
 .projects li:nth-child(2) {
-	background-color: green;
+	background-color: #6A5F9B;
 }
 
 .projects li:nth-child(3) {
-	background-color: blue;
+	background-color: #E7654E;
 }
 
-/*Delete*/
+.projects li:nth-child(4) {
+	background-color: #6B80DD;
+}
+
+.projects li:nth-child(5) {
+	background-color: #AC4057;
+}
+
+.projects li:nth-child(6) {
+	background-color: #00A4B9;
+}
+
 .projects ul li{
-	border: 1px solid black;
 	min-height: 300px;
+	position: relative;
+}
+
+.project-name {
+	display: block;
+    position: absolute;
+    top: calc(50% - 20px);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
 }
 
 .about-me {
@@ -57,10 +79,6 @@ main:before {
 
 .about-me .columns {
 	margin-bottom: 50px;
-}
-
-.skill-html5 {
-
 }
 
 [class^="skill-"] [class^="flaticon-"] {
