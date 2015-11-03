@@ -1,9 +1,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/foundation.min.css">
 	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor/modernizr.js"></script>
 </head>
 
@@ -14,7 +15,7 @@
 			<nav class="top-bar" data-topbar role="navigation">
 			  <ul class="title-area">
 			    <li class="name">
-			      <h1><a href="#">ALAN SÁNCHEZ</a></h1>
+			      <h1><a class="page-name" href="#">ASPP</a></h1>
 			    </li>
 			     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -23,8 +24,10 @@
 			  <section class="top-bar-section">
 			    <!-- Right Nav Section -->
 			    <ul class="right">
-			      <li class="active"><a href="#">Projects</a></li>
-			      <li><a href="#">Contact</a></li>
+			      <li><a class="menu-projects" href="#">Projects</a></li>
+			      <li><a class="menu-skills" href="#">Skills</a></li>
+			      <li><a class="menu-about" href="#">About</a></li>
+			      <li><a class="menu-contact" href="#">Contact</a></li>
 			    </ul>
 			  </section>
 			</nav>
@@ -37,7 +40,7 @@
   		</div>
 	</main>
 
-	<section class="projects">
+	<section id="projects" data-mcn="menu-projects">
 		<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-3">
 			<li><span class="project-name">Portfolio<span></li>
 			<li><span class="project-name">Responsive Blog<span></li>
@@ -48,10 +51,7 @@
 		</ul>
 	</section>
 
-	<section class="about-me row">
-
-
-		<h1>My skills</h1>
+	<section id="skills" class="row" data-mcn="menu-skills">
 
 		<div class="small-12 medium-6 large-4 columns">
 			<div class="skill-html5">
@@ -98,7 +98,6 @@
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/vendor/circle-progress.js"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 </html>

@@ -1,4 +1,17 @@
+/* Menu */
+$(window).scroll(function() {
+        if ($('main').position().top - $(window).scrollTop() > -616) {
+            $('.top-bar-section ul li').removeClass('active');
+        }
+        if ($('#projects').position().top - $(window).scrollTop() < 96) {
+            $('.menu-projects').parent().addClass('active').siblings().removeClass('active');
+        }
+        if ($('#skills').position().top - $(window).scrollTop() < 96) {
+            $('.menu-skills').parent().addClass('active').siblings().removeClass('active');
+        }
+    });
 
+/* Circle graphs */
 $('.skill-html5').circleProgress({
     value: 0.85,
     size: 250,
@@ -39,3 +52,4 @@ $('.skill-git').circleProgress({
         color: "#F34F29"
     }
 });
+
