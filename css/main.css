@@ -1,8 +1,36 @@
-
-
-
 main {
 	height: 70vh;
-	width: 100vh;
+	width: 100vw;
 	background-color: orange;
+}
+
+.welcome-text {
+	position: relative;
+    top: calc(50% - 24px);
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.projects li:nth-child(1) {
+	background-color: red;
+}
+
+.projects li:nth-child(2) {
+	background-color: green;
+}
+
+.projects li:nth-child(3) {
+	background-color: blue;
+}
+
+/*Delete*/
+.projects ul li{
+	border: 1px solid black;
+	min-height: 300px;
+}
+
+footer {
+	height: 20vh;
+	background-color: #888;
 }
