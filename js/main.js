@@ -1,19 +1,28 @@
 /* Menu */
 $(window).scroll(function() {
-        if ($('main').position().top - $(window).scrollTop() > -706) {
-            $('.top-bar-section ul li').removeClass('active');
-            $('.top-bar').removeClass('top-bar-scrolled');
-            $('.title-area').removeClass('title-area-scrolled');
-        }
-        if ($('#projects').position().top - $(window).scrollTop() < 46) {
-            $('.menu-projects').parent().addClass('active').siblings().removeClass('active');
-            $('.top-bar').addClass('top-bar-scrolled');
-            $('.title-area').addClass('title-area-scrolled');
-        }
-        if ($('#skills').position().top - $(window).scrollTop() < 96) {
-            $('.menu-skills').parent().addClass('active').siblings().removeClass('active');
-        }
-    });
+    if ($('main').position().top - $(window).scrollTop() > -706) {
+        $('.top-bar-section ul li').removeClass('active');
+        $('.top-bar').removeClass('top-bar-scrolled');
+        $('.title-area').removeClass('title-area-scrolled');
+    }
+    if ($('#projects').position().top - $(window).scrollTop() < 58) {
+        $('.menu-projects').parent().addClass('active').siblings().removeClass('active');
+        $('.top-bar').addClass('top-bar-scrolled');
+        $('.title-area').addClass('title-area-scrolled');
+    }
+    if ($('#skills').position().top - $(window).scrollTop() < 96) {
+        $('.menu-skills').parent().addClass('active').siblings().removeClass('active');
+    }
+});
+
+
+/* Projects */
+
+$('#projects ul li').mouseenter(function() {
+    $(this).find('a').addClass('mouseover');
+}).mouseleave(function(){
+    $(this).find('a').removeClass('mouseover');
+});
 
 /* Circle graphs */
 $('.skill-html5').circleProgress({

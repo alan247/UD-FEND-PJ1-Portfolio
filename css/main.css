@@ -90,44 +90,96 @@ main:before {
 }
 
 @media only screen and (min-width: 40.0625em) {
-
    .welcome-text {
    		font-size: 2em;
    	}
-
 }
 
-#projects {
-	margin-bottom: 50px;
+/* Projects */
+
+[class*="block-grid-"] {
+	margin: 0;
+}
+
+#projects li {
+	padding: 0;
+	height: 150px;
+	position: relative;
+}
+
+@media only screen and (min-width: 40.0625em) {
+   #projects li {
+   		height: 300px;
+   	}
+}
+
+#projects img {
+	min-height: 300px;
+}
+
+#projects a:before {
+	content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.mouseover:before {
+	opacity: 0.9 !important;
 }
 
 #projects li:nth-child(1) {
 	background-color: #14966C;
 }
 
+#projects li:nth-child(1) a:before {
+	background-color: #14966C;
+    opacity: 0.95;
+}
+
 #projects li:nth-child(2) {
 	background-color: #6A5F9B;
+}
+
+#projects li:nth-child(2) a:before {
+	background-color: #6A5F9B;
+    opacity: 0.95;
 }
 
 #projects li:nth-child(3) {
 	background-color: #E7654E;
 }
 
+#projects li:nth-child(3) a:before {
+	background-color: #6A5F9B;
+    opacity: 0.95;
+}
+
 #projects li:nth-child(4) {
 	background-color: #6B80DD;
+}
+
+#projects li:nth-child(4) a:before {
+	background-color: #6A5F9B;
+    opacity: 0.95;
 }
 
 #projects li:nth-child(5) {
 	background-color: #AC4057;
 }
 
+#projects li:nth-child(5) a:before {
+	background-color: #6A5F9B;
+    opacity: 0.95;
+}
+
 #projects li:nth-child(6) {
 	background-color: #00A4B9;
 }
 
-#projects ul li{
-	min-height: 300px;
-	position: relative;
+#projects li:nth-child(6) a:before {
+	background-color: #6A5F9B;
+    opacity: 0.95;
 }
 
 .project-name {
@@ -138,8 +190,16 @@ main:before {
     width: 100%;
     font-weight: bold;
     color: white;
-    font-size: 25px;
+    font-size: 1.25em;
 }
+
+@media screen and (min-width: 40.0625em) {
+	.project-name {
+		font-size: 1.56em;
+	}
+}
+
+/* Skills */
 
 #skills {
 	margin: 0 auto;
@@ -154,7 +214,7 @@ main:before {
 [class^="skill-"] [class^="flaticon-"] {
 	position: absolute;
     left: 0;
-    font-size: 70px !important;
+    font-size: 70px;
     top: 26%;
     right: 0;
 }
