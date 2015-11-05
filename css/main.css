@@ -234,10 +234,10 @@ main:before {
 .flaticon-php {
 	color: #6785B7;
 }
+
 .flaticon-git {
     color: #F34F29;
 }
-
 
 .skill-name {
 	display: block;
@@ -252,7 +252,80 @@ main:before {
 	min-height: 300px;
 }
 
+/* About */
+
+#about {
+	background: #eee;
+	padding: 100px 0;
+}
+
+.who-is {
+	max-width: 700px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+.who-is h1 {
+	font-weight: bold;
+    color: #444;
+    margin: 0;
+    font-size: 25px;
+}
+
+.who-is h2 {
+	line-height: 1;
+    color: #aaa;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+@media screen and (min-width: 40.0625em) {
+	.who-is h1 {
+		font-size: 38px;
+	}
+	.who-is h2 {
+		font-size: 20px;
+	}
+}
+
+.who-is h1,
+.who-is h2 {
+	text-align: center;
+}
+
+#about picture {
+    text-align: center;
+	margin: 76px 0;
+	display: block;
+}
+
+#about picture img {
+	border-radius: 50%;
+	border: 15px solid #5DAFCA;
+}
+
+@media screen and (min-width: 40.0625em) {
+	#about picture img {
+		border: 23px solid #5dafca;
+	}
+}
+
+.who-is p {
+	font-family: 'Lato', sans-serif;
+	color: #555;
+}
+
+/* Footer */
+
 footer {
-	height: 20vh;
-	background-color: #888;
+	background-color: #4C4B4B;
+	padding: 40px 0;
+}
+
+.copyright {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: #ddd;
 }

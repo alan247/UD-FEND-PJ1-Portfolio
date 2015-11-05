@@ -13,6 +13,9 @@ $(window).scroll(function() {
     if ($('#skills').position().top - $(window).scrollTop() < 96) {
         $('.menu-skills').parent().addClass('active').siblings().removeClass('active');
     }
+    if ($('#about').position().top - $(window).scrollTop() < 96) {
+        $('.menu-about').parent().addClass('active').siblings().removeClass('active');
+    }
 });
 
 
