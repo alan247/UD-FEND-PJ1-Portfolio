@@ -76,8 +76,8 @@ main:before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-    opacity: .4;
+    background-image: linear-gradient(to bottom, #000000, #2F2F2F);
+    opacity: .7;
 }
 
 .welcome-text {
@@ -93,6 +93,12 @@ main:before {
    .welcome-text {
    		font-size: 2em;
    	}
+}
+
+.take-a-look {
+	font-size: 3.3em;
+    font-weight: bold;
+    letter-spacing: -1;
 }
 
 /* Projects */

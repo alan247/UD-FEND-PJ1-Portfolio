@@ -1,3 +1,6 @@
+
+
+
 /* Menu */
 $(window).scroll(function() {
     if ($('main').position().top - $(window).scrollTop() > -706) {
@@ -17,6 +20,26 @@ $(window).scroll(function() {
         $('.menu-about').parent().addClass('active').siblings().removeClass('active');
     }
 });
+
+
+/* Type text animation */
+
+$('.welcome-text').empty().typetype(
+    'var hello = "Hi, I\'m Alan, a front-end developer";',
+    {
+        e: 0.03,
+        t: 80
+    }
+ ).delay(1500).backspace(
+    51,
+    {
+        t: 20,
+        callback: function(){
+           $('.welcome-text').addClass('take-a-look');
+        }
+    }).typetype('TAKE A LOOK AROUND!');
+
+
 
 
 /* Projects */
